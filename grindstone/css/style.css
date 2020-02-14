@@ -9,15 +9,15 @@
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* basic css stuff */
-#footer-bottom #footer-info {
-  width: 100%; }
-  #footer-bottom #footer-info .reach-customer-copyright {
-    float: left; }
-  #footer-bottom #footer-info .reach-branding {
-    float: right; }
-    #footer-bottom #footer-info .reach-branding a:before {
-      content: url("images/reach-favicon.png");
-      padding-right: 4px; }
+footer .reach-branding {
+  float: right;
+  color: #0088c7; }
+  footer .reach-branding .reachEA {
+    font-style: italic;
+    color: #ffa73d; }
+  footer .reach-branding a:before {
+    content: url("images/reach-favicon.png");
+    padding-right: 4px; }
 
 #footer-bottom #footer-info .reach-customer-copyright {
   float: left; }

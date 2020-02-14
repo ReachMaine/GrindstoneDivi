@@ -1,17 +1,16 @@
 /* basic css stuff */
 
-#footer-bottom {
-  #footer-info {
-    width: 100%;
-    .reach-customer-copyright {
-      float: left;
+footer {
+  .reach-branding {
+    float: right;
+    color: $reach-blue;
+    .reachEA {
+      font-style: italic;;
+      color: $reach-orange;
     }
-    .reach-branding{
-      float: right;
-      a:before {
-        content: url('images/reach-favicon.png');
-        padding-right: 4px;
-      }
+    a:before {
+      content: url('images/reach-favicon.png');
+      padding-right: 4px;
     }
   }
 }
