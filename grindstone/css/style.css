@@ -14,30 +14,6 @@
 .disable-lightbox .disable-lightbox .et_overlay {
   display: none !important; }
 
-/** Desktop **/
-@media (min-width: 981px) {
-  .reach-gallery-4-3-2 .et_pb_gallery_item {
-    width: 25% !important;
-    /*four  columns*/
-    clear: none !important; } }
-/** Tablet **/
-@media (max-width: 980px) {
-  .reach-gallery-4-3-2 .et_pb_gallery_item {
-    width: 25% !important;
-    /*four columns*/
-    clear: none !important; } }
-/** Small Tablet and Large Phone **/
-@media (max-width: 767px) {
-  .reach-gallery-4-3-2 .et_pb_gallery_item {
-    width: 33.33% !important;
-    /*three columns*/
-    clear: none !important; } }
-/** Phone **/
-@media (max-width: 479px) {
-  .reach-gallery-4-3-2 .et_pb_gallery_item {
-    width: 50% !important;
-    /*two columns*/
-    clear: none !important; } }
 footer .reach-branding {
   float: right;
   color: #0088c7; }
@@ -48,6 +24,42 @@ footer .reach-branding {
     content: url("images/reach-favicon.png");
     padding-right: 4px; }
 
+.et_pb_module.et_pb_gallery.rmm-gallery-tight .et_pb_grid_item.et_pb_gallery_item {
+  margin-bottom: 1% !important;
+  margin-right: 1% !important; }
+
+/** Desktop => 4columns **/
+@media (min-width: 981px) {
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item {
+    width: 24% !important;
+    /*four  columns + 1% for margin*/ }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item.first_in_row {
+    clear: none; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item:nth-child(4n+1) {
+    clear: both !important; } }
+/** Tablet * = 4 columns, yes need this.*/
+@media (max-width: 980px) and (min-width: 768px) {
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item {
+    width: 24% !important; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item.first_in_row {
+    clear: none; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item:nth-child(4n+1) {
+    clear: both !important; } }
+/** Small Tablet and Large Phone  = 3 columns **/
+@media (max-width: 767px) and (min-width: 480px) {
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item {
+    width: 32% !important;
+    clear: none; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item:nth-child(3n+1) {
+    clear: both !important; } }
+/** Phone => 2 columns **/
+@media (max-width: 479px) {
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item {
+    width: 49% !important; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item.first_in_row {
+    clear: none; }
+  .et_pb_module.et_pb_gallery.reach-gallery-4-3-2 .et_pb_gallery_items .et_pb_gallery_item:nth-child(2n+1) {
+    clear: both !important; } }
 #footer-bottom #footer-info .reach-customer-copyright {
   float: left; }
 #footer-bottom #footer-info .reach-branding {
